@@ -40,7 +40,7 @@ subjectKeyIdentifier    = hash
 default_ca              = root_ca               # The default CA section
 
 [ root_ca ]
-dir                     = CA_PATH
+dir                     = __CA_PATH__
 certificate             = $dir/ca/ca.crt             # The CA cert
 private_key             = $dir/ca/private/ca.key     # CA private key
 serial                  = $dir/ca/db/crt.srl         # Serial number file
@@ -89,7 +89,7 @@ keyUsage                = critical,digitalSignature,keyEncipherment
 basicConstraints        = CA:false
 extendedKeyUsage        = serverAuth,clientAuth
 subjectKeyIdentifier    = hash
-subjectAltName          = ALT_NAME
+subjectAltName          = __ALT_NAME__
 authorityKeyIdentifier  = keyid:always
 authorityInfoAccess     = @issuer_info
 crlDistributionPoints   = @crl_info

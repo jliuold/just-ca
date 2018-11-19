@@ -31,4 +31,4 @@ commonName_default		= SERVER_CA_HOSTNAME
 keyUsage                = critical,digitalSignature,keyEncipherment
 extendedKeyUsage        = serverAuth,clientAuth
 subjectKeyIdentifier    = hash
-subjectAltName          = ALT_NAME
+subjectAltName          = DNS:localhost
